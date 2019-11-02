@@ -1,9 +1,11 @@
 import React from 'react';
 import '../css/ClassQueue.css';
 import Helping from './Helping.js';
+import {Queue} from './Queue.js';
 
 function ClassQueue(props) {
-
+    // GET list of TAs
+    // GET queue of students
     let TAs = ["Jeremy", "Andrea"];
     let students = ["Aaron", "Becca", "William", "Jeffrey", "Josh"];
     let currentHelpings = [];
@@ -13,7 +15,7 @@ function ClassQueue(props) {
         var curStudent = students.pop();
         currentHelpings.push(<Helping ta={curTA} currentStudent={curStudent} />);
     }
-
+    // pass props into Queue
     return (
       <div className="ClassQueue">
           <h2 className="title">
@@ -26,6 +28,7 @@ function ClassQueue(props) {
             <h2>
                 Next Students
             </h2>
+            <Queue/>
           </div>
       </div>
     );
