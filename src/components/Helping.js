@@ -5,7 +5,10 @@ function Helping(props) {
     return (
       <div className="Helping">
           <p>
-              {props.ta} is helping {props.currentStudent}
+            <span>
+              <span className="ta"><b>{props.ta} </b></span>is helping <span className="student"><b>{props.currentStudent}</b>
+              </span>
+          </span>
           </p>
       </div>
     );
