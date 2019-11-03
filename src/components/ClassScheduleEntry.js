@@ -13,7 +13,8 @@ function ClassScheduleEntry(props) {
     let curTA = jsonArray[i];
     let hours = curTA.hours;
     let specificHours = hours[TODAY];
-    console.log(specificHours);
+    // let specificHours = hours.monday;
+    // console.log(specificHours);
     if(specificHours !== undefined && specificHours != ""){
       let newTA =
         {
@@ -33,7 +34,7 @@ function ClassScheduleEntry(props) {
 
   return (
     <div className="ClassScheduleEntry">
-      {todaySchedule}
+      {/* {todaySchedule} */}
     </div>
   );
 }
