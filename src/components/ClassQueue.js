@@ -6,6 +6,7 @@ import {Queue} from './Queue.js';
 function ClassQueue(props) {
     // GET list of TAs
     // GET queue of students
+    let jsonStudents = require('../dummy-data/students');
     let TAs = ["Jeremy", "Andrea"];
     let students = ["Aaron", "Becca", "William", "Jeffrey", "Josh"];
     let currentHelpings = [];

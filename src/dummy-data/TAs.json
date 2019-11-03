@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Jeremy",
+        "location":"FGH 134",
+        "hours":
+        {
+            "monday": ["1:00am-5:00am", "6:00pm-9:00pm"],
+            "tuesday":[],
+            "wednesday":["1:00am-5:00am", "6:00pm-9:00pm"],
+            "thursday":[],
+            "friday":["1:00am-5:00am", "6:00pm-9:00pm"],
+            "saturday":[],
+            "sunday":[]
+        }
+    },
+    {
+        "name": "Andrea",
+        "location":"FGH 138",
+        "hours":
+        {
+            "monday": [],
+            "tuesday":["7:00am-10:00am"],
+            "wednesday":[],
+            "thursday":["7:00am-10:00am"],
+            "friday":[],
+            "saturday":[],
+            "sunday":[]
+        }
+    },
+    {
+        "name": "Aaron",
+        "location":"FGH Atrium",
+        "hours":
+        {
+            "monday": ["6:00pm-9:00pm"],
+            "tuesday":[],
+            "wednesday":[],
+            "thursday":["7:00am-10:00am"],
+            "friday":[],
+            "saturday":[],
+            "sunday":[]
+        }
+    },
+    {
+        "name": "Becca",
+        "location":"FGH 134",
+        "hours":
+        {
+            "monday": ["12:00pm-9:00pm"],
+            "tuesday":[],
+            "wednesday":[],
+            "thursday":["12:00pm-9:00pm"],
+            "friday":["12:00pm-9:00pm"],
+            "saturday":[],
+            "sunday":[]
+        }
+    }
+]

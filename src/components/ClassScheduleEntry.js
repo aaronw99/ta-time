@@ -1,14 +1,43 @@
 import React from 'react';
-//import '../css/ClassSchedule.css';
+import '../css/ClassScheduleEntry.css';
+import ClassScheduleEntryData from './ClassScheduleEntryData.js';
 
-function ClassScheduleEntry() {
-    return (
-      <div className="ClassScheduleEntry">
-          <p>
-              ~ Schedule ~
-          </p>
-      </div>
-    );
+function ClassScheduleEntry(props) {
+  // database call in real thing
+  let jsonArray = require('../dummy-data/TAs.json');
+  const TODAY = props.day;
+  console.log("today is " + TODAY);
+  let todayTAs = [];
+
+  for(var i = 0; i < jsonArray.length; i++) {
+    let curTA = jsonArray[i];
+    let hours = curTA.hours;
+    let specificHours = hours[TODAY];
+    // let specificHours = hours.monday;
+    // console.log(specificHours);
+    if(specificHours !== undefined && specificHours != ""){
+      let newTA =
+        {
+          "name":curTA.name,
+          "location":curTA.location,
+          "hours":specificHours,
+        };
+      todayTAs.push(newTA);
+    }
   }
 
-  export default ClassScheduleEntry;
+  let todaySchedule = [];
+  for(var j = 0; j < todayTAs.length; j++){
+    let curTA = todayTAs[j];
+    todaySchedule.push(<ClassScheduleEntryData name={curTA.name} location={curTA.location} hours={curTA.hours} />);
+  }
+
+  return (
+    <div className="ClassScheduleEntry">
+      <h2>{props.day}</h2>
+      {todaySchedule}
+    </div>
+  );
+}
+
+export default ClassScheduleEntry;

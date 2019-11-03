@@ -1,14 +1,19 @@
 import React from 'react';
 import '../css/ClassSchedule.css';
+import ClassScheduleEntry from './ClassScheduleEntry';
 
 function ClassSchedule() {
-    let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-    let times = ["10:00", "12:00"]
+  
     return (
       <div className="ClassSchedule">
-          <p>
-              ~ Schedule ~
-          </p>
+          <h1>
+              SCHEDULE
+          </h1>
+          <ClassScheduleEntry day="monday"/>
+          <ClassScheduleEntry day="tuesday"/>
+          <ClassScheduleEntry day="wednesday"/>
+          <ClassScheduleEntry day="thursday"/>
+          <ClassScheduleEntry day="friday"/>
       </div>
     );
   }
