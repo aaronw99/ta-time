@@ -7,8 +7,8 @@ export const Queue = props => {
 
         queue.push(
             <tr key={student.id}>
-                <th>{student.name}</th>
-                <th>{queue.length * 5 + 5}</th>
+                <td>{student.name}</td>
+                <td>{queue.length * 5 + 5}</td>
             </tr>
         );
     });
@@ -30,11 +30,15 @@ export const Queue = props => {
             <thead style={{}}>
             <tr>
                 <th style={{
+                    "color": "#E48AFF",
+
                     "fontWeight": "bold",
                 }}>Name
                 </th>
 
                 <th style={{
+                    "color": "#E48AFF",
+
                     "fontWeight": "bold",
                 }}>Estimated wait
                 </th>
