@@ -1,6 +1,7 @@
 [
     {
         "name": "Jeremy",
+        "location":"FGH 134",
         "hours":
         {
             "monday": ["1:00am-5:00am", "6:00pm-9:00pm"],
@@ -14,6 +15,7 @@
     },
     {
         "name": "Andrea",
+        "location":"FGH 138",
         "hours":
         {
             "monday": [],
@@ -27,6 +29,7 @@
     },
     {
         "name": "Aaron",
+        "location":"FGH Atrium",
         "hours":
         {
             "monday": ["6:00pm-9:00pm"],
@@ -40,6 +43,7 @@
     },
     {
         "name": "Becca",
+        "location":"FGH 134",
         "hours":
         {
             "monday": ["12:00pm-9:00pm"],
