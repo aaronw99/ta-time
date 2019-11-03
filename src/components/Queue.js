@@ -1,42 +1,62 @@
 import React from "react";
 
 export const Queue = props => {
-  let queue = [];
-  let students = [{
-    id: 123,
-    name: "Becca"
+    let queue = [];
+    let students = [{
+        id: 123,
+        name: "Becca"
 
-  }, {
-    id: 124,
-    name: "Andrea"
+    }, {
+        id: 124,
+        name: "Andrea"
 
-  }, {
-    id: 12,
-    name: "Aaron"
+    }, {
+        id: 12,
+        name: "Aaron"
 
-  }];
-  students.forEach(student => {
+    }];
+    students.forEach(student => {
 
-    queue.push(
-      <tr key={student.id}>
-        <th>{student.name}</th>
-        <th>{queue.length * 5}</th>
-      </tr>
+        queue.push(
+            <tr key={student.id}>
+                <th>{student.name}</th>
+                <th>{queue.length * 5 + 5}</th>
+            </tr>
+        );
+    });
+
+    return (
+        <table
+            style={{
+                "textAlign": "center",
+                "backgroundColor": "#282C34",
+                "color": "#69BBFF",
+                "borderColor": "#ABB2BF",
+                "borderStyle": "solid",
+                "borderWidth": "5%",
+                "borderRadius": "10px",
+                "margin": "auto",
+                "width": "50%"
+
+            }}>
+            <thead style={{}}>
+            <tr>
+                <th style={{
+                    "fontWeight": "bold",
+                }}>Name
+                </th>
+
+                <th style={{
+                    "fontWeight": "bold",
+                }}>Estimated wait
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr/>
+            {queue}
+            </tbody>
+        </table>
     );
-  });
-
-  return (
-    <table>
-      <thead>
-      <tr>
-        <th>Name</th>
-        <th>Estimated wait</th>
-      </tr>
-      </thead>
-      <tbody>
-      {queue}
-      </tbody>
-    </table>
-  );
 
 };
