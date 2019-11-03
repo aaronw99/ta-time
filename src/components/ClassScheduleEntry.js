@@ -34,7 +34,7 @@ function ClassScheduleEntry(props) {
 
   return (
     <div className="ClassScheduleEntry">
-      <h2>{props.day}</h2>
+      <h2 className="day">{props.day}</h2>
       {todaySchedule}
     </div>
   );

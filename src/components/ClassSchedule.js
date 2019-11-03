@@ -6,14 +6,16 @@ function ClassSchedule() {
   
     return (
       <div className="ClassSchedule">
-          <h1>
-              SCHEDULE
+        <div className="inner">
+          <h1 className="schedule_txt">
+              S C H E D U L E
           </h1>
           <ClassScheduleEntry day="monday"/>
           <ClassScheduleEntry day="tuesday"/>
           <ClassScheduleEntry day="wednesday"/>
           <ClassScheduleEntry day="thursday"/>
           <ClassScheduleEntry day="friday"/>
+        </div>
       </div>
     );
   }

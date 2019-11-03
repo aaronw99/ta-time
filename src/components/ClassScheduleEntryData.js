@@ -1,11 +1,18 @@
 import React from 'react';
+import '../css/ClassScheduleEntryData.css';
 
 function ClassScheduleEntryData(props) {
     return (
-      <div className="ClassScheduleEntryData">
-          <p>
-            {props.name} {props.location} {props.hours}
-          </p>
+      <div className="flexContainer">
+        <div className="row">
+            {props.name} 
+        </div>
+        <div className="row">
+            {props.location}
+        </div>
+        <div className="row">
+             {props.hours}
+        </div>
       </div>
     );
   }

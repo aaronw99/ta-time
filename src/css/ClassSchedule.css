@@ -8,3 +8,11 @@
     border-width: 5%;
     border-radius: 10px;
 }
+
+.inner{
+    margin:2%;
+}
+
+.schedule_txt {
+    color: #E06C75;
+}
