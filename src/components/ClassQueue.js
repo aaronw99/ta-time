@@ -14,25 +14,48 @@ function ClassQueue(props) {
     for (var i = 0; i < TAs.length; i++) {
         var curTA = TAs[i];
         var curStudent = students.pop();
-        currentHelpings.push(<Helping ta={curTA} currentStudent={curStudent} />);
+        currentHelpings.push(<Helping ta={curTA} currentStudent={curStudent}/>);
     }
     // pass props into Queue
     return (
-      <div className="ClassQueue">
-          <h2 className="title">
-            {props.class}
-          </h2>
-          <div className="Helpings">
-              {currentHelpings}
-          </div>
-          <div className="title">
-            <h2>
-                Next Students
-            </h2>
-            <Queue students={jsonStudents}/>
-          </div>
-      </div>
-    );
-  }
+        <div className="ClassQueue">
 
-  export default ClassQueue;
+            <div>
+                <h1>
+                    Office Hours
+                </h1>
+
+                <div class="tab">
+                    <h3 id="topHeading">
+
+                        <select>
+                            <option value="CS1101"> CS1101</option>
+                            <option value="CS2201">CS2201</option>
+                            <option value="CS3251">CS3251</option>
+                        </select>
+                        <button id = "toggle"> View Schedule</button>
+                        <button id = "toggle"> View Queue</button>
+
+                    </h3>
+                </div>
+                <h2 className="title">
+                    {props.class}
+                </h2>
+
+            </div>
+            <div className="Helpings">
+                {currentHelpings}
+            </div>
+            <div className="title">
+                <h2>
+                    Next Students
+                </h2>
+                <Queue/>
+            </div>
+
+
+        </div>
+    );
+}
+
+export default ClassQueue;
