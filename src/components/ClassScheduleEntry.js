@@ -1,14 +1,19 @@
 import React from 'react';
-//import '../css/ClassSchedule.css';
+import '../css/ClassScheduleEntry.css';
+// dummy data
 
-function ClassScheduleEntry() {
-    return (
-      <div className="ClassScheduleEntry">
-          <p>
-              ~ Schedule ~
-          </p>
-      </div>
-    );
-  }
+function ClassScheduleEntry(props) {
+  let jsonArray = require('../dummy-data/TAs.json');
+  const TODAY = props.day;
+  let todayTAs = [];
 
-  export default ClassScheduleEntry;
+  return (
+    <div className="ClassScheduleEntry">
+      <p>
+        ~ Schedule ~
+      </p>
+    </div>
+  );
+}
+
+export default ClassScheduleEntry;
