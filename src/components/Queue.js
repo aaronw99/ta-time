@@ -2,20 +2,8 @@ import React from "react";
 
 export const Queue = props => {
     let queue = [];
-    let students = [{
-        id: 123,
-        name: "Becca"
 
-    }, {
-        id: 124,
-        name: "Andrea"
-
-    }, {
-        id: 12,
-        name: "Aaron"
-
-    }];
-    students.forEach(student => {
+    props.students.forEach(student => {
 
         queue.push(
             <tr key={student.id}>
