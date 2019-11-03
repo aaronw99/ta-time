@@ -17,3 +17,18 @@
     text-align: center;
     margin: 3%;
 }
+
+
+h1 {
+    font-size: 45px;
+    padding-left: 20px;
+    color: white;
+}
+
+#topHeading {
+    padding-left: 40px;
+    color: white;
+
+}
+
+
