@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-// import App from './components/App';
-// import ClassQueue from './components/ClassQueue';
-import ClassSchedule from './components/ClassSchedule'
+import App from './components/App';
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<ClassSchedule />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
